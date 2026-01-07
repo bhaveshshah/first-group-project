@@ -1,53 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <title>Yoga Studio</title>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <div>
-      <header class="flex flex-row">
-        <h1 class="basis-64">Yoga Studio</h1>
-      </header>
-      <div class="flex justify-end">
-        <nav class="flex">
-          <ul>
-            <li><a href="#hero" class="hover:text-green-700">Home</a></li>
-            <li><a href="#classes" class="hover:text-green-700">Page</a></li>
-            <li>
-              <a href="#instructors" class="hover:text-green-700">Portfolio</a>
-            </li>
-            <li><a href="#contact" class="hover:text-green-700">Contact</a></li>
-            <li><a href="#contact" class="hover:text-green-700">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+  <title>Yoga Studio</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div>
+    <header class="flex flex-riow">
+      <h1 class="basis-64">Yoga Studio</h1>
+    </header>
+    <div class="flex justify-end">
+      <nav class="flex">
+        <ul>
+          <li><a href="#hero" class="hover:text-green-700">Home</a></li>
+          <li><a href="#classes" class="hover:text-green-700">Page</a></li>
+          <li>
+            <a href="#instructors" class="hover:text-green-700">Portfolio</a>
+          </li>
+          <li><a href="#contact" class="hover:text-green-700">Contact</a></li>
+          <li><a href="#contact" class="hover:text-green-700">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </div>
 
-    <!-- End of Navigation Bar -->
+  <!-- End of Navigation Bar -->
 
-    <!-- Main Content -->
+  <!-- Main Content -->
 
-    <!-- Hero Section -->
-    <!-- End of Hero Section -->
+  <!-- Hero Section -->
 
-    <!-- Classes Section -->
-    <!-- End of Classes Section -->
+  <!-- Hero Section -->
+  <section class="relative h-screen flex items-center overflow-hidden" id="hero">
 
-    <!-- Instructors Section -->
-    <!-- End of Instructors Section -->
+    <!-- Left Side: Woman doing yoga -->
+    <div class="w-1/2 h-full flex items-center justify-end relative z-20">
+      <img 
+        src="./src/assets/yoga1.png" 
+        alt="Instructor doing yoga pose" 
+        class="h-[85%] object-contain translate-y-[-10%] translate-x-[15%]" 
+      />
+    </div>
+  
+    <!-- Right Side: Blue shape + text (glued together) -->
+    <div class="w-1/2 h-full relative flex items-center">
+      
+      <!-- Blue ellipse as a container -->
+      <div class="relative h-full w-auto">
+        
+        <!-- The blue image -->
+        <img 
+          src="./src/assets/ellipse.png" 
+          alt="Eclipse" 
+          class="h-full w-auto object-contain scale-[1.2]"
+        />
+        
+        <!-- Text overlaid ON TOP of the blue image -->
+        <div class="absolute inset-0 flex flex-col justify-start items-end mt-35 pl-[10%] pr-[5%] py-12 text-white text-right">
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">YOGA</h1>
+          <h2 class="text-lg md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
+            DISCOVER YOUR<br/>INNER PEACE WITH YOGA
+          </h2>
+          <p class="text-sm md:text-base leading-relaxed mb-8 opacity-90">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </p>
+          <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-3 rounded-md transition-colors w-fit">
+            SIGN IN
+          </button>
+        </div>
+        
+      </div>
+      
+    </div>
+  
+  </section>
 
-    <!-- Footer -->
-    <footer class="bg-blue-200 p-4 mt-8">
-      <p class="text-center text-green-900">
-        &copy; 2024 Yoga Studio. All rights reserved.
-      </p>
-    </footer>
-    <!-- End of Footer -->
-  </body>
+  <!-- End of Hero Section -->
+
+  <!-- Classes Section -->
+  <!-- End of Classes Section -->
+
+  <!-- Instructors Section -->
+  <!-- End of Instructors Section -->
+
+  <!-- Footer -->
+  <footer class="bg-blue-200 p-4 mt-8">
+    <p class="text-center text-green-900">
+      &copy; 2024 Yoga Studio. All rights reserved.
+    </p>
+  </footer>
+  <!-- End of Footer -->
+</body>
+
 </html>
