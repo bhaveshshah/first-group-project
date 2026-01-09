@@ -1,340 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Quicksand", sans-serif;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700;800&display=swap"
-    rel="stylesheet" />
-  <style>
-    body {
-      font-family: "Quicksand", sans-serif;
-    }
+    <title>Yoga Studio</title>
+  </head>
 
-  </style>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <body class="bg-white text-gray-800">
+    <!-- Navigation Bar -->
 
-  <title>Yoga Studio</title>
-</head>
+    <header class="flex flex-row">
+      <img
+        class="ml-4 pt-10"
+        src="./src/assets/Small-logo.png"
+        alt="Yoga Studio Logo"
+      />
+      <img
+        class="mt-4 pt-10"
+        src="./src/assets/logo-yogaStudio.png"
+        alt="Yoga Studio Text Logo"
+      />
+    </header>
+    <nav class="flex items-center">
+      <ul class="flex space-x-4 ml-auto mr-4 pb-12">
+        <li>
+          <a href="#hero" class="p-2 border rounded text-blue-700">Home</a>
+        </li>
+        <li><a href="#classes" class="text-blue-700">Page</a></li>
+        <li>
+          <a href="#instructors" class="text-blue-700">Portfolio</a>
+        </li>
+        <li><a href="#contact" class="text-blue-700">Contact</a></li>
+        <li><a href="#store" class="text-blue-700">Store</a></li>
+      </ul>
+    </nav>
 
-<body class="bg-white text-gray-800">
-  <!-- Navigation Bar -->
+    <!-- End of Navigation Bar -->
 
-  <header class="flex flex-row">
-    <img class="ml-4 pt-10" src="./src/assets/Small-logo.png" alt="Yoga Studio Logo" />
-    <img class="mt-4 pt-10" src="./src/assets/logo-yogaStudio.png" alt="Yoga Studio Text Logo" />
-  </header>
-  <nav class="flex items-center">
-    <ul class="flex space-x-4 ml-auto mr-4 pb-12">
-      <li><a href="#hero" class="p-2 border rounded text-blue-700">Home</a></li>
-      <li><a href="#classes" class="text-blue-700">Page</a></li>
-      <li>
-        <a href="#instructors" class="text-blue-700">Portfolio</a>
-      </li>
-      <li><a href="#contact" class="text-blue-700">Contact</a></li>
-      <li><a href="#store" class="text-blue-700">Store</a></li>
-    </ul>
-  </nav>
+    <!-- Main Content -->
 
-  <!-- End of Navigation Bar -->
+    <!-- Hero Section -->
 
-  <!-- Main Content -->
-
-  <!-- Hero Section -->
-
-  <section class="relative h-screen flex items-center overflow-hidden" id="hero">
-
-    <!-- Left Side: Woman doing yoga -->
-    <div class="w-1/2 h-full flex items-center justify-end relative z-20">
-      <img src="./src/assets/yoga1.png" alt="Instructor doing yoga pose"
-        class="h-[85%] object-contain translate-y-[-10%] translate-x-[15%]" />
-    </div>
-
-    <!-- Right Side: Blue shape + text (glued together) -->
-    <div class="w-1/2 h-full relative flex items-center">
-
-      <!-- Blue ellipse as a container -->
-      <div class="relative h-full w-auto">
-
-        <!-- The blue image -->
-        <img src="./src/assets/ellipse.png" alt="Eclipse"
-          class="h-full w-auto object-contain scale-[1.2]" />
-
-        <!-- Text overlaid ON TOP of the blue image -->
-        <div
-          class="absolute inset-0 flex flex-col justify-start items-end mt-35 pl-[10%] pr-[5%] py-12 text-white text-right">
-          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">YOGA</h1>
-          <h2 class="text-lg md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
-            DISCOVER YOUR<br />INNER PEACE WITH YOGA
-          </h2>
-          <p class="text-sm md:text-base leading-relaxed mb-8 opacity-90">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-          </p>
-          <button
-            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-3 rounded-md transition-colors w-fit">
-            SIGN IN
-          </button>
-        </div>
-
+    <section
+      class="relative h-screen flex items-center overflow-hidden"
+      id="hero"
+    >
+      <!-- Left Side: Woman doing yoga -->
+      <div class="w-1/2 h-full flex items-center justify-end relative z-20">
+        <img
+          src="./src/assets/yoga1.png"
+          alt="Instructor doing yoga pose"
+          class="h-[85%] object-contain translate-y-[-10%] translate-x-[15%]"
+        />
       </div>
 
-    </div>
+      <!-- Right Side: Blue shape + text (glued together) -->
+      <div class="w-1/2 h-full relative flex items-center">
+        <!-- Blue ellipse as a container -->
+        <div class="relative h-full w-auto">
+          <!-- The blue image -->
+          <img
+            src="./src/assets/ellipse.png"
+            alt="Eclipse"
+            class="h-full w-auto object-contain scale-[1.2]"
+          />
 
-  </section>
-
-  <!-- End of Hero Section -->
-
-  <!-- Video Section -->
-
-  <section class="py-20 px-8 bg-white">
-
-    <!-- Text Content -->
-    <div class="max-w-4xl mx-auto text-center mb-12">
-      <h2 class="text-3xl md:text-4xl font-bold text-blue-600 mb-6">
-        YOGA IS YOUR NATURAL STATE.
-      </h2>
-      <p class="text-gray-600 leading-relaxed">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-        labore et dolore
-        magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi aliquip
-        ex ea commodo
-        consequatnon proident.
-      </p>
-    </div>
-
-    <!-- Video Container -->
-    <div class="max-w-5xl mx-auto">
-      <div class="relative aspect-video rounded-sm overflow-hidden shadow-2xl group cursor-pointer"
-        id="videoContainer">
-
-        <!-- Thumbnail Image -->
-        <img src="./src/assets/yoga2.png" alt="Yoga video thumbnail"
-          class="w-full h-full object-cover" id="videoThumbnail" />
-
-        <!-- Play Button Overlay -->
-        <div
-          class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30"
-          id="playOverlay">
-          <div class="flex flex-col items-center">
-            <!-- Play Icon Circle -->
-            <div
-              class="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-              <svg class="w-10 h-10 md:w-12 md:h-12 text-white ml-1" fill="currentColor"
-                viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-            <!-- Watch Video Text -->
-            <span class="text-white text-lg md:text-xl font-semibold ">WATCH VIDEO</span>
+          <!-- Text overlaid ON TOP of the blue image -->
+          <div
+            class="absolute inset-0 flex flex-col justify-start items-end mt-35 pl-[10%] pr-[5%] py-12 text-white text-right"
+          >
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
+              YOGA
+            </h1>
+            <h2
+              class="text-lg md:text-2xl lg:text-3xl font-semibold leading-tight mb-4"
+            >
+              DISCOVER YOUR<br />INNER PEACE WITH YOGA
+            </h2>
+            <p class="text-sm md:text-base leading-relaxed mb-8 opacity-90">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </p>
+            <button
+              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-3 rounded-md transition-colors w-fit"
+            >
+              SIGN IN
+            </button>
           </div>
         </div>
-
-        <!-- Actual Video (hidden initially) -->
-        <video id="videoPlayer" class="w-full h-full object-cover hidden" controls
-          src="https://tinyurl.com/3m93s9nt">
-        </video>
-
       </div>
-    </div>
+    </section>
 
-    <script src="./src/script/main.js"></script>
+    <!-- End of Hero Section -->
 
-  </section>
+    <!-- Video Section -->
 
-  <!-- End of Video Section -->
-
-  <!-- Classes Section -->
-  <section class="max-w-6xl mx-auto px-6 py-2 mt-10" id="classes">
-    <h2 class="text-center text-5xl font-semibold tracking-widest text-blue-600 mb-16">
-      CLASSES</h2>
-
-    <!-- Cards Container-->
-    <div class="grid grid-cols-1 md:grid-cols-3 mb-16">
-
-      <!-- Card 1 -->
-      <div class="flex flex-col items-center text-center">
-
-        <!-- LIGHT BLUE BACKGROUND PANEL -->
-        <div class="w-full max-w-xs bg-blue-50 pt-10 pb-6 flex justify-center">
-
-          <!-- IMAGE -->
-          <img src="./src/assets/yoga3.png" alt="Karma Yoga" class="h-80 w-auto object-contain" />
-
-        </div>
-
-        <!-- BLUE SHAPE BACKGROUND (ellipse) -->
-        <div
-          class="w-full max-w-xs -mt-8 bg-no-repeat bg-center bg-contain px-6 pt-[52px] pb-12 text-white"
-          style="background-image: url('./src/assets/ellipse2.png');">
-          <h3 class="text-xl font-bold mb-3">KARMA YOGA</h3>
-          <p class="text-sm opacity-90 mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          </p>
-          <a href="#" class="text-sm underline">see more...</a>
-        </div>
-
-      </div>
-      <!-- Card 2 -->
-      <div class="flex flex-col items-center text-center">
-
-        <!-- LIGHT BLUE BACKGROUND PANEL -->
-        <div class="w-full max-w-xs bg-blue-50 pt-10 pb-6 flex justify-center">
-
-          <!-- IMAGE -->
-          <img src="./src/assets/yoga4.png" alt="Hatha Yoga" class="h-80 w-auto object-contain" />
-
-        </div>
-
-        <!-- BLUE SHAPE BACKGROUND (ellipse) -->
-        <div
-          class="w-full max-w-xs -mt-8 bg-no-repeat bg-center bg-contain px-6 pt-[52px] pb-12 text-white"
-          style="background-image: url('./src/assets/ellipse2.png');">
-          <h3 class="text-xl font-bold mb-3">HATHA YOGA</h3>
-          <p class="text-sm opacity-90 mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          </p>
-          <a href="#" class="text-sm underline">see more...</a>
-        </div>
-
-      </div>
-      <!-- Card 3 -->
-      <div class="flex flex-col items-center text-center">
-
-        <!-- LIGHT BLUE BACKGROUND PANEL -->
-        <div class="w-full max-w-xs bg-blue-50 pt-12 pb-6 flex justify-center">
-
-          <!-- IMAGE -->
-          <img src="./src/assets/yoga5.png" alt="Acro Yoga" class="h-80 w-auto object-contain" />
-
-        </div>
-
-        <!-- BLUE SHAPE BACKGROUND (ellipse) -->
-        <div
-          class="w-full max-w-xs -mt-8 bg-no-repeat bg-center bg-contain px-6 pt-[52px] pb-12 text-white"
-          style="background-image: url('./src/assets/ellipse2.png');">
-          <h3 class="text-xl font-bold mb-4 ">ACRO YOGA</h3>
-          <p class="text-sm opacity-90 mb-4">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          </p>
-          <a href="#" class="text-sm underline">see more...</a>
-        </div>
-
-      </div>
-    </div>
-    <!-- End of Cards Container-->
-
-  </section>
-
-  <!-- End of Classes Section -->
-
-  <!-- Instructors Section -->
-  <!-- End of Instructors Section -->
-
-  <!-- Practice Section -->
-
-  <section class="bg-white py-16 px-6 lg:px-20">
-    <div class="max-w-7xl mx-auto">
-      <div class="grid lg:grid-cols-2 gap-12 items-center mb-8">
-        <!-- Left Column - Headline and CTA -->
-        <div>
-          <h1 class="text-5xl lg:text-6xl font-bold text-blue-600 leading-tight mb-8">
-            PRACTICE<br />
-            <span class="block">WHENEVER YOU WANT</span>
-            <span class="block">WHERE EVER YOU WANT</span>
-          </h1>
-          <button
-            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-full text-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
-            GET STARTED
-          </button>
-        </div>
-
-        <!-- Right Column - Lorem Ipsum Text -->
-        <div class="text-gray-600 leading-relaxed">
-          <p class="mb-4">
-            Lorem ipsum dolor sit amet, consectetur in adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-            enim ad minim veniam, quis nostrud exercitation ullamco laboris
-            nisi ut aliquip ex ea commodo consequat, non proident. Lorem ipsum
-            dolor sit amet, consectetur in adipiscing elit, sed do eiusmod
-            tempor incididunt ex labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequation proident, aporie et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-            ullamco, laboris nisi aliquip ex ea commodo consequation proident.
-          </p>
-        </div>
-      </div>
-
-
-    </div>
-  </section>
-
-  <!-- End of Practice Section -->
-
-  <!-- Citation Section -->
-
-  <section class="bg-blue-100 py-20 px-8" style="border-top: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    border-image: repeating-linear-gradient(
-      to right,
-      #2563EB 0 20px,
-      transparent 20px 35px
-    ) 4;
-  ">
-
-    <!-- Opening quote -->
-    <div class="text-9xl font-bold leading-none text-left mb-6 ml-70 text-blue-700">
-      “
-    </div>
-
-    <!-- Arrows + text -->
-    <div class="flex items-center gap-4">
-
-      <!-- Left arrow -->
-      <div class="flex-1 text-6xl ml-20 text-white cursor-pointer select-none">
-        ❮
-      </div>
-
-      <!-- Center content -->
-      <div class="flex-[3] text-center text-blue-700">
-
-        <p class="text-2xl md:text-3xl">
-          The secret of change is to focus all of your energy,
-          not on fighting the old, but on building the new.
+    <section class="py-20 px-8 bg-white">
+      <!-- Text Content -->
+      <div class="max-w-4xl mx-auto text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-blue-600 mb-6">
+          YOGA IS YOUR NATURAL STATE.
+        </h2>
+        <p class="text-gray-600 leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam quis nostrud exercitation ullamco laboris nisi aliquip ex
+          ea commodo consequatnon proident.
         </p>
       </div>
 
-      <!-- Right arrow -->
-      <div class="flex-1 text-6xl mr-20 text-white text-right cursor-pointer select-none">
-        ❯
+      <!-- Video Container -->
+      <div class="max-w-5xl mx-auto">
+        <div
+          class="relative aspect-video rounded-sm overflow-hidden shadow-2xl group cursor-pointer"
+          id="videoContainer"
+        >
+          <!-- Thumbnail Image -->
+          <img
+            src="./src/assets/yoga2.png"
+            alt="Yoga video thumbnail"
+            class="w-full h-full object-cover"
+            id="videoThumbnail"
+          />
+
+          <!-- Play Button Overlay -->
+          <div
+            class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30"
+            id="playOverlay"
+          >
+            <div class="flex flex-col items-center">
+              <!-- Play Icon Circle -->
+              <div
+                class="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+              >
+                <svg
+                  class="w-10 h-10 md:w-12 md:h-12 text-white ml-1"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M8 5v14l11-7z" />
+                </svg>
+              </div>
+              <!-- Watch Video Text -->
+              <span class="text-white text-lg md:text-xl font-semibold"
+                >WATCH VIDEO</span
+              >
+            </div>
+          </div>
+
+          <!-- Actual Video (hidden initially) -->
+          <video
+            id="videoPlayer"
+            class="w-full h-full object-cover hidden"
+            controls
+            src="https://tinyurl.com/3m93s9nt"
+          ></video>
+        </div>
       </div>
 
-    </div>
+      <script src="./src/script/main.js"></script>
+    </section>
 
-    <!-- Closing quote -->
-    <div class="text-9xl font-bold leading-none text-right mt-6 mr-100 text-blue-700">
-      ”
-    </div>
+    <!-- End of Video Section -->
 
-    <!-- Citation Author -->
+    <!-- Classes Section -->
+    <section class="max-w-6xl mx-auto px-6 py-2 mt-10" id="classes">
+      <h2
+        class="text-center text-5xl font-semibold tracking-widest text-blue-600 mb-16"
+      >
+        CLASSES
+      </h2>
+
+      <!-- Cards Container-->
+      <div class="grid grid-cols-1 md:grid-cols-3 mb-16">
+        <!-- Card 1 -->
+        <div class="flex flex-col items-center text-center">
+          <!-- LIGHT BLUE BACKGROUND PANEL -->
+          <div
+            class="w-full max-w-xs bg-blue-50 pt-10 pb-6 flex justify-center"
+          >
+            <!-- IMAGE -->
+            <img
+              src="./src/assets/yoga3.png"
+              alt="Karma Yoga"
+              class="h-80 w-auto object-contain"
+            />
+          </div>
+
+          <!-- BLUE SHAPE BACKGROUND (ellipse) -->
+          <div
+            class="w-full max-w-xs -mt-8 bg-no-repeat bg-center bg-contain px-6 pt-[52px] pb-12 text-white"
+            style="background-image: url('./src/assets/ellipse2.png')"
+          >
+            <h3 class="text-xl font-bold mb-3">KARMA YOGA</h3>
+            <p class="text-sm opacity-90 mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor
+            </p>
+            <a href="#" class="text-sm underline">see more...</a>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="flex flex-col items-center text-center">
+          <!-- LIGHT BLUE BACKGROUND PANEL -->
+          <div
+            class="w-full max-w-xs bg-blue-50 pt-10 pb-6 flex justify-center"
+          >
+            <!-- IMAGE -->
+            <img
+              src="./src/assets/yoga4.png"
+              alt="Hatha Yoga"
+              class="h-80 w-auto object-contain"
+            />
+          </div>
+
+          <!-- BLUE SHAPE BACKGROUND (ellipse) -->
+          <div
+            class="w-full max-w-xs -mt-8 bg-no-repeat bg-center bg-contain px-6 pt-[52px] pb-12 text-white"
+            style="background-image: url('./src/assets/ellipse2.png')"
+          >
+            <h3 class="text-xl font-bold mb-3">HATHA YOGA</h3>
+            <p class="text-sm opacity-90 mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor
+            </p>
+            <a href="#" class="text-sm underline">see more...</a>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="flex flex-col items-center text-center">
+          <!-- LIGHT BLUE BACKGROUND PANEL -->
+          <div
+            class="w-full max-w-xs bg-blue-50 pt-12 pb-6 flex justify-center"
+          >
+            <!-- IMAGE -->
+            <img
+              src="./src/assets/yoga5.png"
+              alt="Acro Yoga"
+              class="h-80 w-auto object-contain"
+            />
+          </div>
+
+          <!-- BLUE SHAPE BACKGROUND (ellipse) -->
+          <div
+            class="w-full max-w-xs -mt-8 bg-no-repeat bg-center bg-contain px-6 pt-[52px] pb-12 text-white"
+            style="background-image: url('./src/assets/ellipse2.png')"
+          >
+            <h3 class="text-xl font-bold mb-4">ACRO YOGA</h3>
+            <p class="text-sm opacity-90 mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor
+            </p>
+            <a href="#" class="text-sm underline">see more...</a>
+          </div>
+        </div>
+      </div>
+      <!-- End of Cards Container-->
+    </section>
+
+    <!-- End of Classes Section -->
+
+    <!-- Instructors Section -->
+    <!-- End of Instructors Section -->
+
+    <!-- Practice Section -->
+
+    <section class="bg-white py-16 px-6 lg:px-20">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center mb-8">
+          <!-- Left Column - Headline and CTA -->
+          <div>
+            <h1
+              class="text-5xl lg:text-6xl font-bold text-blue-600 leading-tight mb-8"
+            >
+              PRACTICE<br />
+              <span class="block">WHENEVER YOU WANT</span>
+              <span class="block">WHERE EVER YOU WANT</span>
+            </h1>
+            <button
+              class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-full text-lg transition-colors duration-300 shadow-lg hover:shadow-xl"
+            >
+              GET STARTED
+            </button>
+          </div>
+
+          <!-- Right Column - Lorem Ipsum Text -->
+          <div class="text-gray-600 leading-relaxed">
+            <p class="mb-4">
+              Lorem ipsum dolor sit amet, consectetur in adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat, non proident. Lorem ipsum
+              dolor sit amet, consectetur in adipiscing elit, sed do eiusmod
+              tempor incididunt ex labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequation proident, aporie et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+              ullamco, laboris nisi aliquip ex ea commodo consequation proident.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End of Practice Section -->
+
+    <!-- Citation Section -->
+
+    <section
+      class="bg-blue-100 py-20 px-8"
+      style="
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        border-image: repeating-linear-gradient(
+            to right,
+            #2563eb 0 20px,
+            transparent 20px 35px
+          )
+          4;
+      "
+    >
+      <!-- Opening quote -->
+      <div
+        class="text-9xl font-bold leading-none text-left mb-6 ml-70 text-blue-700"
+      >
+        “
+      </div>
+
+      <!-- Arrows + text -->
+      <div class="flex items-center gap-4">
+        <!-- Left arrow -->
+        <div
+          class="flex-1 text-6xl ml-20 text-white cursor-pointer select-none"
+        >
+          ❮
+        </div>
+
+        <!-- Center content -->
+        <div class="flex-[3] text-center text-blue-700">
+          <p class="text-2xl md:text-3xl">
+            The secret of change is to focus all of your energy, not on fighting
+            the old, but on building the new.
+          </p>
+        </div>
+
+        <!-- Right arrow -->
+        <div
+          class="flex-1 text-6xl mr-20 text-white text-right cursor-pointer select-none"
+        >
+          ❯
+        </div>
+      </div>
+
+      <!-- Closing quote -->
+      <div
+        class="text-9xl font-bold leading-none text-right mt-6 mr-100 text-blue-700"
+      >
+        ”
+      </div>
+
+      <!-- Citation Author -->
       <div class="flex-end text-end text-blue-700 mr-60 text-2xl">
         <p>- Socrates</p>
       </div>
-    <!-- End of Citation Author -->
-</section>
+      <!-- End of Citation Author -->
+    </section>
 
+    <!-- Premium Video Section -->
 
-  <!-- Footer -->
-  <footer class="bg-blue-200 p-4 mt-8">
-    <p class="text-center text-green-900">
-      &copy; 2024 Yoga Studio. All rights reserved.
-    </p>
-  </footer>
-  <!-- End of Footer -->
-</body>
+    <section class="max-w-6xl mx-auto px-6 py-2 mt-10">
+      <h2
+        class="text-center text-5xl font-semibold tracking-widest text-blue-600 mb-16 uppercase"
+      >
+        Our Premium Videos
+      </h2>
 
+      <!-- Cards Container-->
+      <div class="grid grid-cols-1 md:grid-cols-3 mb-16 gap-4">
+        <!-- Premium Video 1 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="max-w-5xl mx-auto">
+            <div
+              class="relative aspect-[3/4] rounded-sm overflow-hidden shadow-2xl group cursor-pointer"
+              id="videoContainer"
+            >
+              <!-- Thumbnail Image -->
+              <img
+                src="./src/assets/yoga6.png"
+                alt="Yoga video thumbnail"
+                class="w-full h-full object-cover"
+                id="videoThumbnail"
+              />
+
+              <!-- Play Button Overlay -->
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30"
+                id="playOverlay"
+              >
+                <div class="flex flex-col items-center">
+                  <!-- Play Icon Circle -->
+                  <div
+                    class="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                  >
+                    <svg
+                      class="w-10 h-10 md:w-12 md:h-12 text-white ml-1"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <!-- Watch Video Text -->
+                  <span class="text-white text-lg md:text-xl font-semibold"
+                    >WATCH VIDEO</span
+                  >
+                </div>
+              </div>
+
+              <!-- Actual Video (hidden initially) -->
+              <video
+                id="videoPlayer"
+                class="w-full h-full object-cover hidden"
+                controls
+                src="https://tinyurl.com/3m93s9nt"
+              ></video>
+            </div>
+          </div>
+        </div>
+        <!-- Premium Video 2 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="max-w-5xl mx-auto">
+            <div
+              class="relative aspect-[3/4] rounded-sm overflow-hidden shadow-2xl group cursor-pointer"
+              id="videoContainer"
+            >
+              <!-- Thumbnail Image -->
+              <img
+                src="./src/assets/yoga7.png"
+                alt="Yoga video thumbnail"
+                class="w-full h-full object-cover"
+                id="videoThumbnail"
+              />
+
+              <!-- Play Button Overlay -->
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30"
+                id="playOverlay"
+              >
+                <div class="flex flex-col items-center">
+                  <!-- Play Icon Circle -->
+                  <div
+                    class="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                  >
+                    <svg
+                      class="w-10 h-10 md:w-12 md:h-12 text-white ml-1"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <!-- Watch Video Text -->
+                  <span class="text-white text-lg md:text-xl font-semibold"
+                    >WATCH VIDEO</span
+                  >
+                </div>
+              </div>
+
+              <!-- Actual Video (hidden initially) -->
+              <video
+                id="videoPlayer"
+                class="w-full h-full object-cover hidden"
+                controls
+                src="https://tinyurl.com/3m93s9nt"
+              ></video>
+            </div>
+          </div>
+        </div>
+        <!-- Premium Video 3 -->
+        <div class="flex flex-col items-center text-center">
+          <div class="max-w-5xl mx-auto">
+            <div
+              class="relative aspect-[3/4] rounded-sm overflow-hidden shadow-2xl group cursor-pointer"
+              id="videoContainer"
+            >
+              <!-- Thumbnail Image -->
+              <img
+                src="./src/assets/yoga8.png"
+                alt="Yoga video thumbnail"
+                class="w-full h-full object-cover"
+                id="videoThumbnail"
+              />
+
+              <!-- Play Button Overlay -->
+              <div
+                class="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30"
+                id="playOverlay"
+              >
+                <div class="flex flex-col items-center">
+                  <!-- Play Icon Circle -->
+                  <div
+                    class="w-20 h-20 md:w-24 md:h-24 rounded-full border-4 border-white flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"
+                  >
+                    <svg
+                      class="w-10 h-10 md:w-12 md:h-12 text-white ml-1"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <!-- Watch Video Text -->
+                  <span class="text-white text-lg md:text-xl font-semibold"
+                    >WATCH VIDEO</span
+                  >
+                </div>
+              </div>
+
+              <!-- Actual Video (hidden initially) -->
+              <video
+                id="videoPlayer"
+                class="w-full h-full object-cover hidden"
+                controls
+                src="https://tinyurl.com/3m93s9nt"
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Cards Container-->
+    </section>
+
+    <!--- End of Premium Section -->
+
+    <!-- Footer -->
+    <footer class="bg-blue-200 p-4 mt-8">
+      <p class="text-center text-green-900">
+        &copy; 2024 Yoga Studio. All rights reserved.
+      </p>
+    </footer>
+    <!-- End of Footer -->
+  </body>
 </html>
