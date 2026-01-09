@@ -44,8 +44,51 @@
 
   <!-- Main Content -->
 
-  <!-- Hero Section -->
-  <!-- End of Hero Section -->
+ <!-- Hero Section -->
+    <section class="relative h-screen flex items-center overflow-hidden" id="hero">
+
+      <!-- Left Side: Woman doing yoga -->
+      <div class="w-1/2 h-full flex items-center justify-end relative z-20">
+        <img 
+          src="./src/assets/yoga1.png" 
+          alt="Instructor doing yoga pose" 
+          class="h-[85%] object-contain translate-y-[-10%] translate-x-[15%]" 
+        />
+      </div>
+    
+      <!-- Right Side: Blue shape + text (glued together) -->
+      <div class="w-1/2 h-full relative flex items-center">
+        
+        <!-- Blue ellipse as a container -->
+        <div class="relative h-full w-auto">
+          
+          <!-- The blue image -->
+          <img 
+            src="./src/assets/ellipse.png" 
+            alt="Eclipse" 
+            class="h-full w-auto object-contain scale-[1.2]"
+          />
+          
+          <!-- Text overlaid ON TOP of the blue image -->
+          <div class="absolute inset-0 flex flex-col justify-start items-end mt-35 pl-[10%] pr-[5%] py-12 text-white text-right">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">YOGA</h1>
+            <h2 class="text-lg md:text-2xl lg:text-3xl font-semibold leading-tight mb-4">
+              DISCOVER YOUR<br/>INNER PEACE WITH YOGA
+            </h2>
+            <p class="text-sm md:text-base leading-relaxed mb-8 opacity-90">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-3 rounded-md transition-colors w-fit">
+              SIGN IN
+            </button>
+          </div>
+          
+        </div>
+        
+      </div>
+    
+    </section>
+    <!-- End of Hero Section -->
 
   <!-- Classes Section -->
   <section class="max-w-6xl mx-auto px-6 py-2" id="classes">
