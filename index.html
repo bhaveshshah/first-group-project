@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <title>Yoga Studio</title>
-  </head>
-  <body>
-    <!-- Navigation Bar -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <div>
-      <header class="flex flex-row">
-        <h1 class="basis-64">Yoga Studio</h1>
-      </header>
-      <div class="flex justify-end">
-        <nav class="flex">
-          <ul>
-            <li><a href="#hero" class="hover:text-green-700">Home</a></li>
-            <li><a href="#classes" class="hover:text-green-700">Page</a></li>
-            <li>
-              <a href="#instructors" class="hover:text-green-700">Portfolio</a>
-            </li>
-            <li><a href="#contact" class="hover:text-green-700">Contact</a></li>
-            <li><a href="#contact" class="hover:text-green-700">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
 
-    <!-- End of Navigation Bar -->
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <!-- Main Content -->
+  <title>Yoga Studio</title>
+</head>
 
-    <!-- Hero Section -->
+<body class="font-[Poppins]">
+  <!-- Navigation Bar -->
+
+    <header class="flex flex-row">
+      <img class="ml-4 pt-10" src="./src/assets/Small-logo.png" alt="Yoga Studio Logo" />
+      <img class="mt-4 pt-10" src="./src/assets/logo-yogaStudio.png" alt="Yoga Studio Text Logo" />
+    </header>
+      <nav class="flex items-center">
+        <ul class="flex space-x-4 ml-auto mr-4 pb-12">
+          <li><a href="#hero" class="p-2 border rounded text-blue-700">Home</a></li>
+          <li><a href="#classes" class="text-blue-700">Page</a></li>
+          <li>
+            <a href="#instructors" class="text-blue-700">Portfolio</a>
+          </li>
+          <li><a href="#contact" class="text-blue-700">Contact</a></li>
+          <li><a href="#store" class="text-blue-700">Store</a></li>
+        </ul>
+      </nav>
+  </div>
+
+  <!-- End of Navigation Bar -->
+
+  <!-- Main Content -->
+
+ <!-- Hero Section -->
     <section class="relative h-screen flex items-center overflow-hidden" id="hero">
 
       <!-- Left Side: Woman doing yoga -->
@@ -79,18 +90,154 @@
     </section>
     <!-- End of Hero Section -->
 
-    <!-- Classes Section -->
-    <!-- End of Classes Section -->
+  <!-- Classes Section -->
+  <section class="max-w-6xl mx-auto px-6 py-2" id="classes">
+    <h2 class="font-[Poppins] text-center text-4xl font-medium tracking-widest text-blue-600 mb-16">
+      CLASSES</h2>
 
-    <!-- Instructors Section -->
-    <!-- End of Instructors Section -->
+    <!-- Cards Container-->
+    <div class="grid grid-cols-1 md:grid-cols-3">
 
-    <!-- Footer -->
-    <footer class="bg-blue-200 p-4 mt-8">
-      <p class="text-center text-green-900">
-        &copy; 2024 Yoga Studio. All rights reserved.
-      </p>
-    </footer>
-    <!-- End of Footer -->
-  </body>
+      <!-- Card 1 -->
+      <div class="flex flex-col items-center text-center">
+
+        <!-- LIGHT BLUE BACKGROUND PANEL -->
+        <div class="w-full max-w-xs bg-blue-50 pt-10 pb-6 flex justify-center">
+
+          <!-- IMAGE -->
+          <img src="./src/assets/yoga3.png" alt="Karma Yoga" class="h-80 w-auto object-contain" />
+
+        </div>
+
+        <!-- BLUE SHAPE BACKGROUND (ellipse) -->
+        <div
+          class="w-full max-w-xs -mt-8 bg-no-repeat bg-center bg-contain px-6 pt-[52px] pb-12 text-white"
+          style="background-image: url('./src/assets/ellipse2.png');">
+          <h3 class="text-xl font-bold mb-3">KARMA YOGA</h3>
+          <p class="text-sm opacity-90 mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          </p>
+          <a href="#" class="text-sm underline">see more...</a>
+        </div>
+
+      </div>
+      <!-- Card 2 -->
+      <div class="flex flex-col items-center text-center">
+
+        <!-- LIGHT BLUE BACKGROUND PANEL -->
+        <div class="w-full max-w-xs bg-blue-50 pt-10 pb-6 flex justify-center">
+
+          <!-- IMAGE -->
+          <img src="./src/assets/yoga4.png" alt="Hatha Yoga" class="h-80 w-auto object-contain" />
+
+        </div>
+
+        <!-- BLUE SHAPE BACKGROUND (ellipse) -->
+        <div
+          class="w-full max-w-xs -mt-8 bg-no-repeat bg-center bg-contain px-6 pt-[52px] pb-12 text-white"
+          style="background-image: url('./src/assets/ellipse2.png');">
+          <h3 class="text-xl font-bold mb-3">HATHA YOGA</h3>
+          <p class="text-sm opacity-90 mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          </p>
+          <a href="#" class="text-sm underline">see more...</a>
+        </div>
+
+      </div>
+      <!-- Card 3 -->
+      <div class="flex flex-col items-center text-center">
+
+        <!-- LIGHT BLUE BACKGROUND PANEL -->
+        <div class="w-full max-w-xs bg-blue-50 pt-12 pb-6 flex justify-center">
+
+          <!-- IMAGE -->
+          <img src="./src/assets/yoga5.png" alt="Acro Yoga" class="h-80 w-auto object-contain" />
+
+        </div>
+
+        <!-- BLUE SHAPE BACKGROUND (ellipse) -->
+        <div
+          class="w-full max-w-xs -mt-8 bg-no-repeat bg-center bg-contain px-6 pt-[52px] pb-12 text-white"
+          style="background-image: url('./src/assets/ellipse2.png');">
+          <h3 class="text-xl font-bold mb-4 ">ACRO YOGA</h3>
+          <p class="text-sm opacity-90 mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+          </p>
+          <a href="#" class="text-sm underline">see more...</a>
+        </div>
+
+      </div>
+      <!-- End of Cards Container-->
+  </section>
+
+  <!-- End of Classes Section -->
+
+  <!-- Instructors Section -->
+  <!-- End of Instructors Section -->
+
+  <!-- Practice Section -->
+  <section class="bg-white py-16 px-6 lg:px-20">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <!-- Left Column - Headline and CTA -->
+        <div>
+          <h1 class="text-5xl lg:text-6xl font-bold text-blue-600 leading-tight mb-8">
+            PRACTICE<br />
+            <span class="block">WHENEVER YOU WANT</span>
+            <span class="block">WHERE EVER YOU WANT</span>
+          </h1>
+          <button
+            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-10 py-4 rounded-full text-lg transition-colors duration-300 shadow-lg hover:shadow-xl">
+            GET STARTED
+          </button>
+        </div>
+
+        <!-- Right Column - Lorem Ipsum Text -->
+        <div class="text-gray-600 leading-relaxed">
+          <p class="mb-4">
+            Lorem ipsum dolor sit amet, consectetur in adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat, non proident. Lorem ipsum
+            dolor sit amet, consectetur in adipiscing elit, sed do eiusmod
+            tempor incididunt ex labore et dolore magna aliqua. Ut enim ad
+            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequation proident, aporie et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+            ullamco, laboris nisi aliquip ex ea commodo consequation proident.
+          </p>
+        </div>
+      </div>
+
+      <!-- Decorative Dashes -->
+      <div class="flex gap-4 mt-16">
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+        <span class="w-8 h-1 bg-blue-600"></span>
+      </div>
+    </div>
+  </section>
+  <!-- End of Practice Section -->
+
+  <!-- Footer -->
+  <footer class="bg-blue-200 p-4 mt-8">
+    <p class="text-center text-green-900">
+      &copy; 2024 Yoga Studio. All rights reserved.
+    </p>
+  </footer>
+  <!-- End of Footer -->
+</body>
+
 </html>
