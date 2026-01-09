@@ -290,9 +290,16 @@
   <!-- End of Practice Section -->
 <!-- Citation Section -->
 
-<section class="bg-blue-100 py-20 px-6 font-[Poppins]">
+<section class="bg-blue-100 py-20 px-8" style="border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-image: repeating-linear-gradient(
+      to right,
+      #2563EB 0 20px,
+      transparent 20px 35px
+    ) 4;
+  ">
     <!-- Opening quote -->
-    <div class="text-8xl font-bold leading-none text-left mb-6 text-blue-700">
+    <div class="text-9xl font-bold leading-none text-left mb-6 ml-70 text-blue-700">
       “
     </div>
 
@@ -300,35 +307,36 @@
     <div class="flex items-center gap-4">
 
       <!-- Left arrow -->
-      <div class="flex-1 text-6xl text-white cursor-pointer select-none">
+      <div class="flex-1 text-6xl ml-20 text-white cursor-pointer select-none">
         ❮
       </div>
 
       <!-- Center content -->
       <div class="flex-[3] text-center text-blue-700">
 
-        <p class="text-2xl md:text-3xl leading-relaxed">
+        <p class="text-2xl md:text-3xl">
           The secret of change is to focus all of your energy,
           not on fighting the old, but on building the new.
         </p>
-
-        <p class="mt-6 text-right font-medium">
-          — Socrates
-        </p>
-
       </div>
 
       <!-- Right arrow -->
-      <div class="flex-1 text-6xl text-white text-right select-none">
+      <div class="flex-1 text-6xl mr-20 text-white text-right cursor-pointer select-none">
         ❯
       </div>
 
     </div>
 
     <!-- Closing quote -->
-    <div class="text-8xl font-bold leading-none text-right mt-6 text-blue-700">
+    <div class="text-9xl font-bold leading-none text-right mt-6 mr-100 text-blue-700">
       ”
     </div>
+
+    <!-- Citation Author -->
+      <div class="flex-end text-end text-blue-700 mr-60 text-2xl">
+        <p>- Socrates</p>
+      </div>
+    <!-- End of Citation Author -->
 </section>
 
 <!-- End of Citation Section -->
